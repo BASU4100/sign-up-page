@@ -7,6 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="side-image">
+        <img src="images/background_image.jpg" alt="Boy sitting on a platform in a dark background" class="bg-image">
+        <div class="logo-banner">
+            <span><img src="images/odin-lined.png" alt="Odin image lined" class="logo"></span> VIVEK
+        </div>
+        <p class="credit">
+            by <a href="https://unsplash.com/@winayy_999?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vinay Tryambake</a> on <a href="https://unsplash.com/photos/a-person-sitting-on-a-bench-dCBRwKHG2wY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>    
+    </div>
+    <div class="sign-up-container">
+        <div class="content">
+            <div>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+            </div>
+            <div>You <i>know</i> you want to.</div>
+        </div>
+        <form action="/response" method="post">
+            <fieldset>
+                <div class="heading">Let's do this!</div>
+                <div class="form-control">
+                    <p>
+                        <label for="first_name">FIRST NAME <span class="req">*</span></label>
+                        <br>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </p>
+                    <p>
+                        <label for="last_name">LAST NAME <span class="req">*</span></label>
+                        <br>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </p>
+                    <p>
+                        <label for="mail">EMAIL <span class="req">*</span></label>
+                        <br>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                    <p>
+                        <label for="tel">PHONE NUMBER</label>
+                        <br>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+                    <p>
+                        <label for="pwd">PASSWORD <span class="req">*</span></label>
+                        <br>
+                        <input type="password" name="password" id="pwd" minlength="8" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="cnf-pwd">CONFIRM PASSWORD <span class="req">*</span></label>
+                        <br>
+                        <input type="password" name="confirm_password" id="cnf-pwd" minlength="8" maxlength="30" required>
+                    </p>
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="alternate-method">
+            Already have an account? <span class="login">Log in</span>
+        </p>
+    </div>
 </body>
 </html>
